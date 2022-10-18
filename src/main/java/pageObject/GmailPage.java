@@ -31,18 +31,7 @@ public class GmailPage extends BasePage {
     public void gmailSingInButtonClick(){
        helper.click(singInButton);
     }
-//    public void accountGoogleButtonClick(){
-//        helper.click(accountGoogle);
-//    }
-//    public void nextButton1Click(){
-//        helper.click(nextButton1);
-//    }
-//    public void inputPassword(){
-//        helper.sendKeys(passwordField,"Test#123Test!");
-//    }
-//    public void nextButton2Click(){
-//        helper.click(nextButton2);
-//    }
+
     public void loginToSystemEmail() {
         helper.sendKeys(emailField, ConfigReader.getProperty("email"));
         helper.click(nextButton1);
