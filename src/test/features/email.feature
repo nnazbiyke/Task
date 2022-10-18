@@ -1,15 +1,11 @@
-Feature: Sing in Email
-  @email
+Feature: Login on gmail
+  @gmail
   Scenario: User on Home Page
-    When Click on Почта button
-    And Input field Email или Логин
-    Then Click on Войти button
-    And Send message from Yandex
-    Then Click on Войти button
-    When Input field name
-    And Input field last name
-    And Click Войти button
-    And Input field generate password password
-    Then Политика конфиденциальности и условия использования
-    And Click Зарегистрироваться button
+    Then click on Sing in button
+    Then input email
+    And click next1
+    Then input password
+    And click next2
+    When user on gmail page
+
 

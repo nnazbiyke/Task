@@ -13,10 +13,6 @@ public class FireFoxWebDriver {
 
         WebDriverManager.firefoxdriver().setup();
         FirefoxOptions options = new FirefoxOptions();
-
-
-        options.addArguments("-headless");
-
         WebDriver driver = new FirefoxDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();

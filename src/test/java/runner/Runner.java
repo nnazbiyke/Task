@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/features",
         glue = "stepDefs",
-        tags = "@email",
+        tags = "@gmail",
         dryRun = false,
         monochrome = true,
         publish = true,
